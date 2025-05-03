@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d8bfd8;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 8px;
+  width: 500px;
+  z-index: 1;
+}
+
+.camera-area {
+  position: relative;
+}
+
+video {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.controls {
+  margin-top: 10px;
+}
+
+.controls button {
+  padding: 6px 10px;
+  margin: 3px;
+  border: none;
+  background-color: #444;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.controls button:hover {
+  background-color: #666;
+}
+
+.controls button:disabled {
+  background-color: #333;
+  cursor: not-allowed;
+}
+
+.settings {
+  margin-top: 10px;
+  background-color: #2a2a2a;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.settings h3 {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.settings label {
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.settings select {
+  padding: 3px;
+  margin: 3px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.preview {
+  margin-top: 10px;
+}
+
+.preview h3 {
+  font-size: 14px;
+}
+
+#captures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#captures img {
+  width: 150px;
+  height: auto;
+  margin: 8px 0;
+  border: 10px solid #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+.resultCaptures {
+  margin-left: 50px;
+}
+
+.gallery {
+  margin-top: 20px;
+  text-align: center;
+  width: 500px;
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.gallery h3 {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+#galleryImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#galleryImages img {
+  width: 100px;
+  height: auto;
+  border: 5px solid #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
